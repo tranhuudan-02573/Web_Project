@@ -1,4 +1,3 @@
-
 const product = document.querySelector('#product');
 product.innerHTML = `<main class="mb-6">
   <div class="container">
