@@ -1,4 +1,6 @@
+
 const product = document.querySelector('#product');
+console.log(prodCard)
 product.innerHTML = `<main class="mb-6">
   <div class="container">
     <!-- Section: Categories -->
