@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.middlCart {
+    width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+.list-cart {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+label {
+    margin-bottom: 0.25rem !important;
+}
+
+a .product-item-name {
+    float: left;
+}
+
+.product-item {
+    display: block;
+}
+
+.name-price span {
+    float: right;
+}
+
+.list-cart .name-price label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+}
+
+.list-cart .icon-close {
+    overflow: hidden;
+    margin: 15px auto 0;
+    border: 0;
+    background: #fff;
+    color: #999;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    transform: translateX(-8%);
+}
+
+.dropdown-toggle {
+    color: blue;
+    font-size: 16px;
+}
+
+.list-cart .product-item .img-sp {
+    width: 16%;
+}
+
+.img-sp a img {
+    width: 75px;
+    margin: auto;
+}
+
+.list-cart .name-price span {
+    color: #f30c28;
+    font-size: 14px;
+    text-align: right;
+    margin-bottom: 2px;
+}
+
+.name-container>span {
+    display: flex;
+    flex-direction: column;
+}
+
+span>strike {
+    color: #333;
+}
+
+.promotionName {
+    display: block;
+}
+
+.list-cart .promo small {
+    font-size: 12px;
+    color: #666;
+    overflow: hidden;
+    padding: 6px 0 0 10px;
+}
+
+.list-cart .promo {
+    width: 77%;
+}
+
+.middlCart .list-cart .product-item .infopro {
+    flex: 1;
+}
+
+.dropdown-toggle {
+    white-space: normal;
+    cursor: pointer;
+}
+
+.promo small::before {
+    content: "\2756";
+    padding-right: 6px;
+    color: #0489B1;
+    margin-left: 5px;
+}
+
+.list-cart .choose-color {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.list-cart .choose-color .sg-color:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-top: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+    transform: rotate(-45deg);
+    position: absolute;
+    display: block;
+    top: -6px;
+    transition: height 0.25s linear;
+    left: 70px;
+
+}
+
+.list-cart .choose-color .sg-color {
+    position: absolute;
+    top: 30px;
+    left: -35px;
+    width: 210px;
+    padding: 0 10px;
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    z-index: 1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+
+}
+
+.list-cart .choose-color .sg-color .select-color {
+    display: block;
+    overflow: hidden;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+#app img.lazyloaded {
+    opacity: 1;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+}
+
+.number-input input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.number-input input[type=number]::-webkit-inner-spin-button,
+.number-input input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.number-input {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.number-input button {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+}
+
+.number-input button:before,
+.number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    height: 2px;
+    transform: translate(-50%, -50%);
+}
+
+.number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.number-input input[type=number] {
+    text-align: center;
+}
+
+.number-input.number-input {
+    border: 1px solid #ced4da;
+    width: 6rem;
+    border-radius: .25rem;
+}
+
+.number-input.number-input button {
+    width: 1.6rem;
+    height: .7rem;
+}
+
+.number-input.number-input button.minus {
+    padding-left: 10px;
+}
+
+.number-input.number-input button:before,
+.number-input.number-input button:after {
+    width: .7rem;
+    background-color: #495057;
+}
+
+.number-input.number-input input[type=number] {
+    max-width: 2rem;
+    padding: .5rem;
+    border: 1px solid #ced4da;
+    border-width: 0 1px;
+    font-size: 1rem;
+    height: 1.5rem;
+    color: #495057;
+}
+
+.number-input.number-input button.minus {
+    padding-left: 3px;
+}   
+
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance: none) and (stroke-color:transparent) {
+
+        .number-input.def-number-input.safari_only button:before,
+        .number-input.def-number-input.safari_only button:after {
+            margin-top: -.3rem;
+        }
+    }
+}
