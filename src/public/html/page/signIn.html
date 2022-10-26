@@ -1,341 +1,119 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <!-- <link rel="stylesheet" href="/css/trangchu/main.css"> -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="/src/vendor/fa6/fontawesome-free-6.2.0-web/css/all.min.css">
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-        <!-- MDB -->
-        <link href="/src/vendor/md5/css/mdb.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="/src/vendor/md5/plugins/css/all.min.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/css/trangchu/main.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/src/vendor/fa6/fontawesome-free-6.2.0-web/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="/src/vendor/md5/css/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/vendor/md5/plugins/css/all.min.css">
 
-        <link rel="stylesheet" href="/src/public/css/main/custom.css">
+    <link rel="stylesheet" href="/src/public/css/main/custom.css">
+    <link rel="stylesheet" href="/src/vendor/md4/css/style.css">
 
-    </head>
+  </head>
 
-    <body>
-        <div id="wrapper">
-            <header id="header">
+  <body>
+    <div id="wrapper">
+      <header id="header">
 
-            </header>
+      </header>
 
-            </div>
-            <div class="container">
+    </div>
 
-<!--Main layout-->
-<main class="mb-6">
-  <div class="container">
-    <!-- Section: Login form -->
-    <section class="">
-      <div class="row d-flex justify-content-center">
-        <div class="col-xl-5 col-md-8">
-          <div class="card rounded-5">
-            <div class="card-body p-4">
-              <!-- Pills navs -->
-              <ul
-                  class="nav nav-pills nav-justified mb-3"
-                  id="ex1"
-                  role="tablist"
-                  >
-                <li class="nav-item" role="presentation">
-                  <a
-                     class="nav-link active"
-                     id="tab-login"
-                     data-mdb-toggle="pill"
-                     href="#pills-login"
-                     role="tab"
-                     aria-controls="pills-login"
-                     aria-selected="true"
-                     >Login</a
-                    >
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a
-                     class="nav-link"
-                     id="tab-register"
-                     data-mdb-toggle="pill"
-                     href="#pills-register"
-                     role="tab"
-                     aria-controls="pills-register"
-                     aria-selected="false"
-                     >Register</a
-                    >
-                </li>
-              </ul>
-              <!-- Pills navs -->
-
-              <!-- Pills content -->
-              <div class="tab-content">
-                <div
-                     class="tab-pane fade show active"
-                     id="pills-login"
-                     role="tabpanel"
-                     aria-labelledby="tab-login"
-                     >
-                  <form>
-                    <div class="text-center mt-4 mb-2">
-                      <p>Sign in with:</p>
-                      <button
-                              type="button"
-                              class="btn btn-link btn-lg btn-floating"
-                              data-ripple-color="primary"
-                              >
-                        <i class="fab fa-facebook-f"></i>
-                      </button>
-
-                      <button
-                              type="button"
-                              class="btn btn-link btn-lg btn-floating"
-                              data-ripple-color="primary"
-                              >
-                        <i class="fab fa-google"></i>
-                      </button>
-
-                      <button
-                              type="button"
-                              class="btn btn-link btn-lg btn-floating"
-                              data-ripple-color="primary"
-                              >
-                        <i class="fab fa-twitter"></i>
-                      </button>
-
-                      <button
-                              type="button"
-                              class="btn btn-link btn-lg btn-floating"
-                              data-ripple-color="primary"
-                              >
-                        <i class="fab fa-github"></i>
-                      </button>
-                    </div>
-
-                    <p class="text-center mb-4">or:</p>
-
-                    <!-- Email input -->
-                    <div class="form-outline mb-4">
-                      <input
-                             type="email"
-                             id="loginName"
-                             class="form-control"
-                             />
-                      <label class="form-label" for="loginName"
-                             >Email or username</label
-                        >
-                    </div>
-
-                    <!-- Password input -->
-                    <div class="form-outline mb-4">
-                      <input
-                             type="password"
-                             id="loginPassword"
-                             class="form-control"
-                             />
-                      <label class="form-label" for="loginPassword"
-                             >Password</label
-                        >
-                    </div>
-
-                    <!-- 2 column grid layout -->
-                    <div class="row mb-4">
-                      <div class="col-md-6 d-flex justify-content-center">
-                        <!-- Checkbox -->
-                        <div class="form-check mb-3 mb-md-0">
-                          <input
-                                 class="form-check-input"
-                                 type="checkbox"
-                                 value=""
-                                 id="loginCheck"
-                                 checked
-                                 />
-                          <label class="form-check-label" for="loginCheck">
-                            Remember me
-                          </label>
-                        </div>
-                      </div>
-
-                      <div class="col-md-6 d-flex justify-content-center">
-                        <!-- Simple link -->
-                        <a href="#!">Forgot password?</a>
-                      </div>
-                    </div>
-
-                    <!-- Submit button -->
-                    <button
-                            type="submit"
-                            class="btn btn-primary btn-rounded w-100 mb-4"
-                            >
-                      Sign in
-                    </button>
-
-                    <!-- Register buttons -->
-                    <div class="text-center">
-                      <p>Not a member? <a href="#!">Register</a></p>
-                    </div>
-                  </form>
-                </div>
-                <div
-                     class="tab-pane fade"
-                     id="pills-register"
-                     role="tabpanel"
-                     aria-labelledby="tab-register"
-                     >
-                  <form>
-                    <div class="text-center mt-4 mb-2">
-                      <p>Sign up with:</p>
-                      <button
-                              type="button"
-                              class="btn btn-link btn-lg btn-floating"
-                              data-ripple-color="primary"
-                              >
-                        <i class="fab fa-facebook-f"></i>
-                      </button>
-
-                      <button
-                              type="button"
-                              class="btn btn-link btn-lg btn-floating"
-                              data-ripple-color="primary"
-                              >
-                        <i class="fab fa-google"></i>
-                      </button>
-
-                      <button
-                              type="button"
-                              class="btn btn-link btn-lg btn-floating"
-                              data-ripple-color="primary"
-                              >
-                        <i class="fab fa-twitter"></i>
-                      </button>
-
-                      <button
-                              type="button"
-                              class="btn btn-link btn-lg btn-floating"
-                              data-ripple-color="primary"
-                              >
-                        <i class="fab fa-github"></i>
-                      </button>
-                    </div>
-
-                    <p class="text-center mb-4">or:</p>
-
-                    <!-- Name input -->
-                    <div class="form-outline mb-4">
-                      <input
-                             type="text"
-                             id="registerName"
-                             class="form-control"
-                             />
-                      <label class="form-label" for="registerName"
-                             >Name</label
-                        >
-                    </div>
-
-                    <!-- Username input -->
-                    <div class="form-outline mb-4">
-                      <input
-                             type="text"
-                             id="registerUsername"
-                             class="form-control"
-                             />
-                      <label class="form-label" for="registerUsername"
-                             >Username</label
-                        >
-                    </div>
-
-                    <!-- Email input -->
-                    <div class="form-outline mb-4">
-                      <input
-                             type="email"
-                             id="registerEmail"
-                             class="form-control"
-                             />
-                      <label class="form-label" for="registerEmail"
-                             >Email</label
-                        >
-                    </div>
-
-                    <!-- Password input -->
-                    <div class="form-outline mb-4">
-                      <input
-                             type="password"
-                             id="registerPassword"
-                             class="form-control"
-                             />
-                      <label class="form-label" for="registerPassword"
-                             >Password</label
-                        >
-                    </div>
-
-                    <!-- Repeat Password input -->
-                    <div class="form-outline mb-4">
-                      <input
-                             type="password"
-                             id="registerRepeatPassword"
-                             class="form-control"
-                             />
-                      <label class="form-label" for="registerRepeatPassword"
-                             >Repeat password</label
-                        >
-                    </div>
-
-                    <!-- Checkbox -->
-                    <div
-                         class="form-check d-flex justify-content-center mb-4"
-                         >
-                      <input
-                             class="form-check-input me-2"
-                             type="checkbox"
-                             value=""
-                             id="registerCheck"
-                             checked
-                             aria-describedby="registerCheckHelpText"
-                             />
-                      <label class="form-check-label" for="registerCheck">
-                        I have read and agree to the terms
-                      </label>
-                    </div>
-
-                    <!-- Submit button -->
-                    <button
-                            type="submit"
-                            class="btn btn-primary btn-rounded w-100 mb-3"
-                            >
-                      Sign in
-                    </button>
-                  </form>
-                </div>
-              </div>
-              <!-- Pills content -->
+    <!--Main layout-->
+    <main class="mb-6">
+      <section class="vh-100">
+        <div class="container py-5 h-100">
+          <div class="row d-flex align-items-center justify-content-center h-100">
+            <div class="col-lg-12">
+              <form>
+  <div class="form-row">
+    <div class="col-md-4 mb-3 md-form">
+      <label for="validationServer015">First name</label>
+      <input type="text" class="form-control is-valid" id="validationServer015" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3 md-form">
+      <label for="validationServer025">Last name</label>
+      <input type="text" class="form-control is-valid" id="validationServer025" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3 md-form">
+      <label for="validationServerUsername55">Username</label>
+      <input type="text" class="form-control is-invalid" id="validationServerUsername55" required>
+      <div class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3 md-form">
+      <label for="validationServer035">City</label>
+      <input type="text" class="form-control is-invalid" id="validationServer035" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3 md-form">
+      <label for="validationServer045">State</label>
+      <input type="text" class="form-control is-invalid" id="validationServer045" required>
+      <div class="invalid-feedback">
+        Please provide a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3 md-form">
+      <label for="validationServer055">Zip</label>
+      <input type="text" class="form-control is-invalid" id="validationServer055" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check pl-0 md-form m-0">
+      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck35" required>
+      <label class="form-check-label" for="invalidCheck35">
+        Agree to terms and conditions
+      </label>
+    </div>
+    <div class="invalid-feedback mt-3 ml-4">
+      You must agree before submitting.
+    </div>
+  </div>
+  <button class="btn btn-primary btn-sm btn-rounded" type="submit">Submit form</button>
+</form>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Section: Login form -->
-  </div>
-</main>
-<!--Main layout-->
+      </section>
+    </main>
+    <!--Main layout-->
 
-            </div>
-            <footer id="footer">
+    <footer id="footer">
 
-            </footer>
-        </div>
+    </footer>
+    </div>
 
- <script src="/src/public/js/footer.js"></script>
-        <script src="/src/public/js/header.js"></script>
-        <!-- MDB -->
-        <script type="text/javascript"
-            src="/src/vendor/md5/js/mdb.min.js"></script>
-<script src="/src/vendor/md5/plugins/js/all.min.js"></script>
+    <script src="/src/public/js/footer.js"></script>
+    <script src="/src/public/js/header.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="/src/vendor/md5/js/mdb.min.js"></script>
+    <script src="/src/vendor/md5/plugins/js/all.min.js"></script>
 
 
-    </body>
+  </body>
 
 </html>

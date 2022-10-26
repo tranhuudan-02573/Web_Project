@@ -12,51 +12,2895 @@
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
         <!-- MDB -->
+
+        <link rel="stylesheet" href="/src/public/css/header.css">
+
         <link href="/src/vendor/md5/css/mdb.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="/src/vendor/md5/plugins/css/all.min.css">
-        <!-- <link rel="stylesheet" href="/src/public/css/carousel.css"> -->
-
+        <link rel="stylesheet" href="/src/vendor/md4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/src/vendor/md4/css/mdb.min.css">
+        <!-- Plugin file -->
         <link rel="stylesheet" href="/src/public/css/main/custom.css">
+        <link rel="stylesheet" href="/src/vendor/md5/css/mdb.min.css">
 
+        <link rel="stylesheet" href="/src/vendor/md5/plugins/css/multi-carousel.min.css">
+
+        <style>
+
+
+        </style>
     </head>
 
     <body>
-        <div id="wrapper">
-            <header id="header">
+        <header id="header">
 
-            </header>
-
+        </header>
 
 
-            <main>
-                <section id="banner" class="p-5">
-                    <div id="carousel">
+
+
+
+        <div class="container mx-auto">
+
+
+
+
+            <section class="my-5">
+
+                <div class="row">
+                    <div class="col-8">
+                        <img src="https://cdn2.cellphones.com.vn/690x300/https://dashboard.cellphones.com.vn/storage/aw-mo-ban-sliding.png"
+                            class="object-cover w-100" alt="">
+                    </div>
+                    <div class="col-4 ">
+                        <div class="multi-carousel vertical w-100 " style="height: 375px;" data-mdb-interval="3000">
+                            <div class="multi-carousel-inner ">
+                                <div class="multi-carousel-item">
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp"
+                                        alt="Table Full of Spices" class="w-100" />
+                                </div>
+                                <div class="multi-carousel-item">
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/2.webp"
+                                        alt="Winter Landscape" class="w-100" />
+                                </div>
+                                <div class="multi-carousel-item">
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/3.webp"
+                                        alt="View of the City in the Mountains" class="w-100" />
+                                </div>
+                                <div class="multi-carousel-item">
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/4.webp"
+                                        alt="Place Royale Bruxelles" class="w-100" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" tabindex="0" data-mdb-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" tabindex="0" data-mdb-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+
+
+            <section class="my-5">
+                <!--Carousel Wrapper-->
+                <div id="multi-item-example" class="carousel slide carousel-multi-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- title -->
+                        <h3 class="text-uppercase fw-700">samsung</h3>
+                        <!--Indicators-->
+
+                        <!--/.Indicators-->
+                        <!--Controls-->
+                        <div class="controls-top">
+                            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
+                                    class="fas fa-chevron-left"></i></a>
+                            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+                                    class="fas fa-chevron-right"></i></a>
+                        </div>
+                        <!--/.Controls-->
+                    </div>
+
+                    <ol class="carousel-indicators "
+                        style="bottom:102% !important;left:25% !important ; transform: translateX(-25%) !important">
+                        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                        <li data-target="#multi-item-example" data-slide-to="1"></li>
+                        <li data-target="#multi-item-example" data-slide-to="2"></li>
+                    </ol>
+                    <button class="btn btn-default position-absolute top-100 start-50 translate-middle mt-4">xem tat
+                        ca</button>
+
+                    <!--Slides-->
+                    <div class="carousel-inner " role="listbox">
+
+                        <!--First slide-->
+                        <div class="carousel-item active">
+
+                            <div class="col-md-3 mx-auto">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  ">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mx-auto">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+                                        
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mx-auto">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mx-auto">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.First slide-->
+
+                        <!--Second slide-->
+                        <div class="carousel-item">
+
+                            <div class="col-md-3 mx-auto">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mx-auto">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mx-auto">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mx-auto">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Second slide-->
+
+                        <!--Third slide-->
+                        <div class="carousel-item">
+
+                            <div class="col-md-3 mx-auto">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mx-auto">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mx-auto">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mx-auto">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Third slide-->
 
                     </div>
-                    <div id="slide" class="p-4 d-flex justify-content-center w-100">
+                    <!--/.Slides-->
 
+                </div>
+                <!--/.Carousel Wrapper-->
+            </section>
+
+
+            <section class="my-5">
+                <h3 class="text-uppercase fw-700">goi y hom nay</h3>
+                <ul class="nav nav-tabs nav-justified md-tabs indigo" id="myTabJust" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab-just" data-toggle="tab" href="#home-just" role="tab"
+                            aria-controls="home-just" aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab-just" data-toggle="tab" href="#profile-just" role="tab"
+                            aria-controls="profile-just" aria-selected="false">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab-just" data-toggle="tab" href="#contact-just" role="tab"
+                            aria-controls="contact-just" aria-selected="false">Contact</a>
+                    </li>
+                </ul>
+                <div class="tab-content card pt-5" id="myTabContentJust">
+                    <div class="tab-pane  active" id="home-just" role="tabpanel" aria-labelledby="contact-tab-just">
+                        <div class="row row-cols-4">
+
+                            <div class="col mb-4">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing
+                                                elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing
+                                                elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing
+                                                elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing
+                                                elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing
+                                                elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="text-center"> <button class="btn btn-default  mt-4">xem tat
+                                ca</button></div>
+                    </div>
+                    <div class="tab-pane fade" id="profile-just" role="tabpanel" aria-labelledby="contact-tab-just">
+                        <div class="row row-cols-4">
+                            <div class="col mb-4">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing
+                                                elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="text-center"> <button class="btn btn-default  mt-4">xem tat
+                                ca</button></div>
+                    </div>
+                    <div class="tab-pane fade" id="contact-just" role="tabpanel" aria-labelledby="contact-tab-just">
+                        <div class="row row-cols-4">
+                            <div class="col mb-4">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing
+                                                elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing
+                                                elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card-product d-block overflow-hidden  border ">
+                                    <style>
+                                        .card-product {
+                                            width: 250px;
+                                            height: 650px;
+                                            padding: 10px 15px 20px;
+                                        }
+
+                                        .card-product:hover .product-title {
+                                            color: var(--mdb-blue);
+
+                                        }
+
+                                        .product-title:hover,
+                                        .item:hover,
+                                        .price-old:hover,
+                                        .price-new:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        p {
+                                            margin: 0;
+
+                                        }
+
+                                        .quote::before {
+                                            content: '●';
+                                            margin-right: 2px;
+                                            left: 0;
+                                            top: 0;
+                                            color: #333;
+                                            font-size: 10px;
+                                        }
+
+                                    </style>
+                                    <div class="d-flex flex-column h-100 w-100  position-relative">
+
+                                        <div class=" align-items-start">
+                                            <span class="badge badge-light mr-1">Trả góp 0%</span>
+                                        </div>
+
+                                        <div class="align-items-start cart-content  h-100">
+                                            <div class="my-2 d-block overflow-hidden item"><img
+                                                    class="object-cover mw-100"
+                                                    src="https://cdn.tgdd.vn/Products/Images/42/210652/iphone-11-pro-512gb-white-600x600.jpg"
+                                                    alt="" /></div>
+                                            <h3 class="text-ellipsis product-title overflow-hidden  mb-1 fw-normal  text-break "
+                                                style="display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;font-size: 14px;">
+                                                iPhone 14 Pro Max 256GB Lorem ipsum dolor sit amet consectetur
+                                                adipisicing
+                                                elit. Iste, maiores.
+                                            </h3>
+                                            <div class="mb-1">
+                                                <span class="mr-2 badge badge-light">6.7 incheslor
+                                                </span>
+
+                                                <span class="mr-2 badge badge-light">128 GB</span>
+                                            </div>
+
+                                            <div class="mb-1">
+                                                <p class=" d-inline-block text-decoration-line-through price-old">
+                                                    40.000.000đ</p>
+                                                <span class="d-inline-block price-new">-25%</span>
+                                            </div>
+                                            <strong class="fw-bold d-block mb-1">38.990.000đ</strong>
+
+                                            <div class=" mb-1 d-flex flex-end">
+                                                <p class=" text-warning " style="font-size: 12px;">
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class=" fa-solid fa-star "></i>
+                                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                                    <i class="fa-regular fa-star "></i>
+                                                </p>
+                                                <p class="ms-1 fw-light d-inline-block align-middle "
+                                                    style="font-size: 12px;">54</p>
+                                            </div>
+                                            <div class="mt-2 text-ellipsis overflow-hidden text-break "
+                                                style="font-size:12px ;">
+                                                <p class="d-flex quote  text-ellipsis overflow-hidden text-break">Chip
+                                                    Snapdragon 8 Gen 1ragon 8
+                                                    Gen 1dsragon 8 G
+
+                                                </p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1dsadasd</p>
+                                                <p class="d-flex quote">Chip Sna1dsadsadsadaddsadsadsadsadad</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                                <p class="d-flex quote">Chip Snapdragon 8 Gen 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2  d-flex justify-content-between align-items-end">
+                                            <a href="" class=" d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-square-plus fa-sm"></i> so sánh
+                                            </a>
+
+                                            <a href="" class="d-block  align-middle" style="font-size:14px ;">
+                                                <i class="fa-regular fa-heart fa-sm"></i> yêu thích
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="text-center"> <button class="btn btn-default  mt-4">xem tat
+                                ca</button></div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="my-5">
+
+                <div class="multi-carousel" data-mdb-interval="2000">
+                    <div class="multi-carousel-inner">
+                        <div class="multi-carousel-item">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp"
+                                alt="Table Full of Spices" class="w-100" />
+                        </div>
+                        <div class="multi-carousel-item">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/2.webp"
+                                alt="Winter Landscape" class="w-100" />
+                        </div>
+                        <div class="multi-carousel-item">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/3.webp"
+                                alt="View of the City in the Mountains" class="w-100" />
+                        </div>
+                        <div class="multi-carousel-item">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/4.webp"
+                                alt="Place Royale Bruxelles" class="w-100" />
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" tabindex="0" data-mdb-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" tabindex="0" data-mdb-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+
+            </section>
+            <section class="my-5">
+                <div class="z-depth-1 px-5 pb-5 pt-3">
+                    <h3 class="mb-4">sp noi bat</h3>
+                    <aside class="row row-cols-10">
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 10%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
+
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
+
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="text-center py-5">
+
+                <p class="mb-4 pb-2 lead font-weight-bold">Trusted by 1 000 000 + developers &amp; designers</p>
+
+                <!-- Logo carousel -->
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="1800">
+                    <div class="carousel-inner">
+                        <!-- First slide -->
+                        <div class="carousel-item active">
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--First column-->
+                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                                    <img src="https://mdbootstrap.com/img/Photos/Template/5.png" class="img-fluid px-4"
+                                        alt="Logo">
+                                </div>
+                                <!--/First column-->
+
+                                <!--Second column-->
+                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                                    <img src="https://mdbootstrap.com/img/Photos/Template/7.png" class="img-fluid px-4"
+                                        alt="Logo">
+                                </div>
+                                <!--/Second column-->
+
+                                <!--Third column-->
+                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                                    <img src="https://mdbootstrap.com/img/Photos/Template/6.png" class="img-fluid px-4"
+                                        alt="Logo">
+                                </div>
+                                <!--/Third column-->
+
+                                <!--Fourth column-->
+                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                                    <img src="https://mdbootstrap.com/img/Photos/Template/9.png" class="img-fluid px-4"
+                                        alt="Logo">
+                                </div>
+                                <!--/Fourth column-->
+
+                            </div>
+                            <!--/Grid row-->
+                        </div>
+                        <!-- First slide -->
+
+                        <!-- Second slide -->
+                        <div class="carousel-item">
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--First column-->
+                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                                    <img src="https://mdbootstrap.com/img/Photos/Template/11.png" class="img-fluid px-4"
+                                        alt="Logo">
+                                </div>
+                                <!--/First column-->
+
+                                <!--Second column-->
+                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                                    <img src="https://mdbootstrap.com/img/Photos/Template/10.png" class="img-fluid px-4"
+                                        alt="Logo">
+                                </div>
+                                <!--/Second column-->
+
+                                <!--Third column-->
+                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                                    <img src="https://mdbootstrap.com/img/Photos/Template/12.png" class="img-fluid px-4"
+                                        alt="Logo">
+                                </div>
+                                <!--/Third column-->
+
+                                <!--Fourth column-->
+                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                                    <img src="https://mdbootstrap.com/img/Photos/Template/13.png" class="img-fluid px-4"
+                                        alt="Logo">
+                                </div>
+                                <!--/Fourth column-->
+
+                            </div>
+                            <!--/Grid row-->
+                        </div>
+                        <!-- Second slide -->
+
+                        <!-- Third slide -->
+                        <div class="carousel-item">
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--First column-->
+                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                                    <img src="https://mdbootstrap.com/img/Photos/Template/1a.png" class="img-fluid px-4"
+                                        alt="Logo">
+                                </div>
+                                <!--/First column-->
+
+                                <!--Second column-->
+                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                                    <img src="https://mdbootstrap.com/img/Photos/Template/2a.png" class="img-fluid px-4"
+                                        alt="Logo">
+                                </div>
+                                <!--/Second column-->
+
+                                <!--Third column-->
+                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                                    <img src="https://mdbootstrap.com/img/Photos/Template/3a.png" class="img-fluid px-4"
+                                        alt="Logo">
+                                </div>
+                                <!--/Third column-->
+
+                                <!--Fourth column-->
+                                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                                    <img src="https://mdbootstrap.com/img/Photos/Template/4a.png" class="img-fluid px-4"
+                                        alt="Logo">
+                                </div>
+                                <!--/Fourth column-->
+
+                            </div>
+                            <!--/Grid row-->
+                        </div>
+                        <!-- Third slide -->
                     </div>
 
-                </section>
+                </div>
+                <!-- Logo carousel -->
 
-                <section id="product" class="p-5"></section>
+            </section>
+            <section class="my-5">
+                <div class="z-depth-1 px-5 pb-5 pt-3">
+                    <h3 class="mb-4">ngan hang ho tro</h3>
+                    <aside class="row row-cols-10">
+                        <div style="width: 15%;">
+                            <div class="d-inline-block py-3">
+                                <a href="" class="d-block overflow-hidden text-center">
+                                    <div class="m-auto d-block overflow-hidden mb-2">
 
-            </main>
+                                        <img class="d-block  w-auto m-auto" style="height: 60px;"
+                                            src="https://cdn.tgdd.vn/Products/Images/522/222806/lenovo-tab-a22-xam-600x600.jpg"
+                                            alt="">
 
-            <footer id="footer">
+                                    </div>
+                                    <span class="d-block overflow-hidden text-center px-1">dien thoai</span>
+                                </a>
+                            </div>
+                        </div>
 
-            </footer>
+                    </aside>
+                </div>
+            </section>
         </div>
-        <script src="/src/public/js/footer.js"></script>
-        <script src="/src/public/js/common/product.js"></script>
-        <script src="/src/public/js/common/slide.js"></script>
-        <script src="/src/public/js/common/carousel.js"></script>
-        <script src="/src/public/js/header.js"></script>
+
+
+
+
+
+
+
+
+
+        <footer id="footer" class="page-footer text-center text-md-left bg-default ">
+
+        </footer>
+
+
+        <script src="/src/vendor/md5/plugins/js/multi-carousel.min.js"></script>
         <!-- MDB -->
-        <script type="text/javascript" src="/src/vendor/md5/js/mdb.min.js"></script>
-        <script src="/src/vendor/md5/plugins/js/all.min.js"></script>
-
-
+        <script type="text/javascript" src="/src/vendor/md4/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/src/vendor/md4/js/popper.min.js"></script>
+        <script type="text/javascript" src="/src/vendor/md4/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/src/vendor/md4/js/mdb.min.js"></script>
+        <script src="/src/vendor/md5/js/mdb.min.js"></script>
+        <!-- Plugin file -->
+        <script src="/src/public/js/footer.js"></script>
+        <script src="/src/public/js/header.js"></script>
     </body>
 
 </html>
